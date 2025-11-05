@@ -30,7 +30,7 @@ def chara():
     pdata.drop(['id', 'arts_plus'], axis=1, inplace=True)
     pdata.columns = [
         'art', 'art_desc', 'special', 'special_desc', 'wait', 'wait_desc',
-        'ability', 'ability_desc', 'kiseki', 'kiseki_desc'
+        'ability', 'ability_desc', 'kiseki', 'kiseki_desc', 'rainbow', 'rainbow_desc'
     ]
     data = cdata.join(pdata)
 
@@ -43,7 +43,7 @@ def chara():
                   indent=2,
                   ensure_ascii=False)
 
-    cdata_en.columns = ['name', 'nickname', 'eponymName', 'flavorText', 'animalFlavorText']
+    cdata_en.columns = ['name']
     if os.path.exists(os.path.join('en_us', 'chara.json')):
         old_en = pd.read_json(os.path.join('en_us', 'chara.json'),
                               orient='index')
@@ -58,6 +58,9 @@ def chara():
 
 
 if __name__ == '__main__':
-    KF3DB_PATH = sys.argv[1]
+    if (len(sys.argv) >1):
+        KF3DB_PATH = sys.argv[1]
+    else:
+        KF3DB_PATH = "."
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
     chara()
