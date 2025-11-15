@@ -1268,6 +1268,33 @@
   "496": {
     "name": "African Forest Elephant"
   },
+  "497": {
+    "name": "Blue-footed Booby"
+  },
+  "498": {
+    "name": "Red-footed Booby"
+  },
+  "499": {
+    "name": "Marine Iguana"
+  },
+  "500": {
+    "name": "Flightless Cormorant"
+  },
+  "501": {
+    "name": "Galápagos penguin"
+  },
+  "502": {
+    "name": "San Cristóbal Giant Tortoise"
+  },
+  "503": {
+    "name": "Pinta Giant Tortoise"
+  },
+  "504": {
+    "name": "Western Santa Cruz Giant Tortoise"
+  },
+  "505": {
+    "name": "Eastern Santa Cruz Giant Tortoise"
+  },
   "506": {
     "name": "Bottlenose Dolphin"
   },
@@ -1315,6 +1342,9 @@
   },
   "526": {
     "name": "Pacific White-sided Dolphin"
+  },
+  "529": {
+    "name": "Anaconda"
   },
   "531": {
     "name": "Son Serval"
